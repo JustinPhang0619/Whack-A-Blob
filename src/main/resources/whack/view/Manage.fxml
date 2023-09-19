@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="667.0" style="-fx-background-color: #2d4fa2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whack.view.ManageController">
+   <children>
+      <TableView fx:id="scoreTable" layoutY="53.0" prefHeight="339.0" prefWidth="667.0" style="-fx-font-family: 'Arial Rounded MT Bold';">
+        <columns>
+          <TableColumn fx:id="userNameColumn" prefWidth="134.0" style="-fx-font-family: 'Arial Rounded MT Bold';" text="User Name" />
+            <TableColumn fx:id="scoreColumn" prefWidth="59.0" text="Score" />
+            <TableColumn fx:id="gameDurationColumn" prefWidth="178.0" text="Game Duration (MS)" />
+            <TableColumn fx:id="clickTimeoutColumn" prefWidth="178.0" text="Click Timeout (MS)" />
+            <TableColumn fx:id="difficultyColumn" prefWidth="117.0" text="Difficulty" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="450.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: #84c9ff; -fx-border-color: BLACK" text="Home" AnchorPane.bottomAnchor="21.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="446.0" layoutY="444.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="16.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#handleDelete" style="-fx-background-color: #84c9ff; -fx-border-color: BLACK" text="Delete">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font></Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

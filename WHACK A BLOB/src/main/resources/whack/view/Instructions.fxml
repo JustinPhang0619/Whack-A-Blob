@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="667.0" style="-fx-background-color: #2d4fa2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whack.view.InstructionsController">
+   <children>
+      <Button layoutX="31.0" layoutY="348.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #84c9ff; -fx-border-color: BLACK" text="Back" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></Button>
+      <TextArea editable="false" layoutX="50.0" layoutY="37.0" prefHeight="371.0" prefWidth="567.0" style="-fx-control-inner-background: #84c9ff;" text="Title: &#10;WHACK A BLOB&#10;&#10;Objective:&#10;The objective of the game is to click on as many circles as possible within the given time limit. Each clicked circle earns you points. Try to achieve the highest score possible!&#10;&#10;Controls:&#10;Mouse Click: Click on the circles to earn points.&#10;&#10;Scoring:&#10;Each circle has a different point value based on its size.&#10;Small Circle: 30 points&#10;Medium Circle: 20 points&#10;Big Circle: 10 points&#10;Penalty Circle: -20 points (clicking these will deduct points)&#10;&#10;You may save your score after a game ends. The default name is PLAYER if you do not input a username.&#10;&#10;Settings:&#10;You may change 3 parameters using the Settings button in the &quot;PLAY&quot; screen before starting the game. You may change the Game Duration, click timeout (which is the amount of time before the circles disappear in Hard mode) and Hard mode causes circles to disappear if left unclicked for a specified amount of time. You may also change the volume of the music if you desire.&#10;&#10;" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="37.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
